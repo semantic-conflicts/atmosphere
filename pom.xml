@@ -162,7 +162,20 @@
                     </filesets>
                 </configuration>
             </plugin>
-        </plugins>
+        <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -170,7 +183,20 @@
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>2.6</version>
                 </plugin>
-            </plugins>
+            <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
         </pluginManagement>
     </build>
     <profiles>
@@ -237,7 +263,20 @@
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>
+                <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
             </build>
         </profile>
         <profile>
@@ -264,7 +303,20 @@
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>
+                <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
             </build>
         </profile>
         <profile>
@@ -311,7 +363,20 @@
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>
+                <plugin>
+	<artifactId>maven-assembly-plugin</artifactId> 
+	<configuration> 
+	<archive> 
+	<manifest> 
+		<mainClass>fully.qualified.MainClass</mainClass> 
+	</manifest> 
+	</archive> 
+	<descriptorRefs> 
+		<descriptorRef>jar-with-dependencies</descriptorRef> 
+	</descriptorRefs> 
+	</configuration> 
+	</plugin> 
+    </plugins>
             </build>
         </profile>
     </profiles>
